@@ -49,7 +49,7 @@ export function Analyze() {
         const fetchCompletedTasks = async () => {
           try {
             setLoadingTasks(true);
-            const response = await fetch("http://localhost:5000/tasks");
+            const response = await fetch("https://stutter-detection-backend.onrender.com/tasks");
             const data = await response.json();
             if (data.tasks) {
               const completedTasks = data.tasks.filter(

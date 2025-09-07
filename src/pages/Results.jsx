@@ -44,7 +44,7 @@ import { useAuth } from "../contexts/AuthContext";
 import AnalysisLoadingScreen from "@/components/AnalysisLoadingScreen"
 
 // Define the API base URL
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = "https://stutter-detection-backend.onrender.com";
 
 export function Results() {
   const [results, setResults] = useState(null);
